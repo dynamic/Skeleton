@@ -1,0 +1,84 @@
+@media print {
+	.header .navigation, .footer, .side, .flexslider, 
+	.feed, #comments-holder, .breadcrumbs, .shareicons, 
+	hr, input { 
+		display: none !important; 
+	}
+	
+	.content, .container, .header, .typography, .column, .columns { 
+		border-width: 0px; 
+		color: #000; 
+		float: none; 
+		padding: 0px !important; 
+		width: 100% !important;
+		font-family: "nimbus-sans", Arial, Helvetica, sans-serif;
+	}
+	
+	.column.alpha, .column.omega, 
+	.columns.alpha, .columns.omega {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	
+	img { 
+		max-width: 100% !important; 
+	}
+	
+	p, h2, h3 { 
+		orphans: 3; 
+		widows: 3; 
+	} /* http://davidwalsh.name/html5-boilerplate */
+	
+	#content .section-grid-3 li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.content p, .typography ul, .content .article h2.whitepaper,
+	h1, h2, h3, h4, h5, h6 {
+		color: #000000 !important;
+	}
+	
+	.content a { 
+		text-decoration: underline; 
+		border-bottom-width: 0px; 
+	}
+	
+	.content a:link:after, .dynamic a:link:after { 
+		content: " (" attr(href) ") ";
+		font-size: 75% !important;
+		font-weight: 100 !important;
+	}
+	
+	.typography a[href$=".pdf"], .typography a[href$=".PDF"], .typography a.pdf {
+		padding: 0 !important;
+		background: none !important;
+	}
+	
+	p {
+		margin: 10px 0px !important;
+		font-size: 10pt !important;
+		line-height: 12pt !important;
+		padding-left: 3px !important;
+		padding-right: 3px !important;
+	}
+	
+	h1 {
+		font-size: 30px !important;
+		line-height: 33px !important;
+	}
+	
+	h2 {
+		font-size: 23px !important;
+		line-height: 25px !important;
+	}
+	
+	h3 {
+		font-size: 18px !important;
+		line-height: 22px !important;
+		margin-bottom: 4px !important;
+	}
+	
+	/* hide sharing buttons on print */
+	.sharethis { display: none; }
+}
