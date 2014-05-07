@@ -108,43 +108,12 @@ $hover: #b0da9b;
 /* #Page Styles
 ================================================== */
 
-	h3.blog-title {color: #a8a8a8;}
-	h3.subtitle {font-size: 24px !important;}
-
-	.green-text {color: $link}
-	.crumbs {font-size: 12px; line-height: 12px;}
-
+.crumbs {font-size: 12px; line-height: 12px;}
 
 /*** Misc Alignment ***/
 .text-right { text-align: right; }
-
 .float-right { float: right; margin: 0 0 0 10px; }
 .float-left { float: left; margin: 0 10px 0 0; }
-
-/* Definition Lists */
-.content dl {  margin: 0 0 20px;  width: 100%;  line-height: 20px; float: left; /*overflow: hidden;*/  }
-.content dt { 
-	float: left; clear: left; width: 30%; margin-bottom: 5px; font-weight: bold; }
-.content dd { /*white-space: nowrap;*/ min-height: 21px; margin-left: 30%; margin-bottom: 5px; }
-
-/* Pagination */
-.apple_pagination { background: #84D374; border: 1px solid #009117; text-align: center; padding: 1em; cursor: default; margin-bottom: 20px; 
-	a, span { padding: 0.2em 0.3em; }
-	.disabled { color: #fff; font-weight: bold; }
-	.current { font-style: normal; font-weight: bold; background-color: #3C9220; display: inline-block; width: 1.4em; height: 1.4em; line-height: 1.5; -moz-border-radius: 1em; -webkit-border-radius: 1em; border-radius: 1em; color: #fff; }
-	a { text-decoration: none; color: #fff; font-weight: bold }
-	a:hover, a:focus { color: #3C9220; }
-}
-		
-/* News */
-.toolbar { border-bottom: 1px solid #eee; padding-bottom: 0px; margin-bottom: 10px; }
-
-.home-slider {margin-top: 80px;}
-
-.gallery:hover img {opacity: .85;}
-
-#Search .middleColumn {width: 100%}
-
 
 p.sharethis {
 	margin: 15px 0 30px;
@@ -160,6 +129,8 @@ a.pi-share.ShareIcon {background-position: -74px 0px;}
 a.em-share.ShareIcon {background-position: -92px 0px;}
 
 
+
+/* Styles for the KitchenSink Page */
 .KitchenBorder {border-bottom: 3px dotted $link; margin-bottom: 20px; padding-bottom: 20px;}
 .KS {background: #e1e1e1; border: 1px solid black; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: black; margin-bottom: 5px;
 	p {padding: 6px 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0px;}
@@ -223,10 +194,6 @@ a.em-share.ShareIcon {background-position: -92px 0px;}
 			}
 		}
 		
-		.header .five.columns, .header .eleven.columns {width: 50% !important;}
-		
-		.blog-list .two.columns {width: 76px !important;}
-		.blog-list .ten.columns	{width: 210px !important; margin-left: 10px;}
 		
 		.footer .columns {margin-bottom: 10px !important;}
 		
@@ -251,7 +218,6 @@ a.em-share.ShareIcon {background-position: -92px 0px;}
 				li ul {width: 420px; right: 0px; left: auto;}
 			}
 
-		.blog-list .ten.columns	{width: 330px !important; }
 		
 		
 	}

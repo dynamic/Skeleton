@@ -1,0 +1,624 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+/* Table of Content
+==================================================
+	#Variables
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+/* Variables
+================================================== */
+/* #Site Styles
+================================================== */
+/* line 30, scss/layout.scss */
+.mobile-menu, #mobilenavs {
+  display: none;
+}
+
+/* line 32, scss/layout.scss */
+.header {
+  position: relative;
+  padding: 20px 0 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px dotted #58a349;
+}
+/* line 33, scss/layout.scss */
+.header a {
+  text-decoration: none;
+}
+
+/* line 35, scss/layout.scss */
+.header h1 img {
+  display: block;
+}
+
+/* line 37, scss/layout.scss */
+.footer {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 3px dotted #58a349;
+}
+
+/* line 39, scss/layout.scss */
+.footerNav, .footerNav ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 40, scss/layout.scss */
+.footerNav li {
+  display: inline;
+  padding: 0px 7px;
+}
+
+/* line 43, scss/layout.scss */
+.column-row {
+  clear: both;
+}
+
+/* line 46, scss/layout.scss */
+nav.primary ul {
+  text-align: right;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1000;
+}
+/* line 47, scss/layout.scss */
+nav.primary li {
+  display: inline-block;
+  padding-bottom: 17px;
+  margin: 0 5px;
+  padding-bottom: 0;
+  white-space: nowrap;
+}
+/* line 48, scss/layout.scss */
+nav.primary li a, nav.primary li a:visited {
+  font-size: 15px;
+  padding: 6px 8px;
+  font-weight: bold;
+  display: block;
+  color: #58a349;
+}
+/* line 49, scss/layout.scss */
+nav.primary li:hover, nav.primary li.section a, nav.primary li.current a {
+  color: #b0da9b;
+}
+
+/* line 54, scss/layout.scss */
+nav.utility ul {
+  text-align: right;
+  font-size: 0px;
+}
+/* line 55, scss/layout.scss */
+nav.utility li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  margin-right: 14px;
+}
+/* line 56, scss/layout.scss */
+nav.utility li.social {
+  margin-right: 0px;
+}
+/* line 57, scss/layout.scss */
+nav.utility li.social.first {
+  margin-left: 20px;
+}
+/* line 58, scss/layout.scss */
+nav.utility li a {
+  padding-top: 0px;
+}
+
+/* line 63, scss/layout.scss */
+.sidebar ul {
+  /*margin-left: 10px;*/
+}
+/* line 64, scss/layout.scss */
+.sidebar ul li {
+  margin-bottom: 5px;
+}
+/* line 66, scss/layout.scss */
+.sidebar a {
+  text-decoration: none;
+}
+
+/* line 69, scss/layout.scss */
+.secondary ul li ul {
+  display: none;
+}
+
+/* line 70, scss/layout.scss */
+.secondary ul li.section ul, .secondary ul li.current ul {
+  display: block;
+}
+
+/* line 71, scss/layout.scss */
+.secondary ul ul {
+  /*margin-left: 10px;*/
+}
+
+/* line 72, scss/layout.scss */
+.secondary ul ul li {
+  padding: 0;
+  line-height: 18px;
+}
+
+/* line 75, scss/layout.scss */
+.navigation li:hover ul.child {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 77, scss/layout.scss */
+ul.child {
+  position: absolute !important;
+  margin: 0px !important;
+  padding-bottom: 40px;
+  display: none;
+  left: 130px;
+}
+/* line 78, scss/layout.scss */
+ul.child li {
+  font-size: 12px;
+  padding-right: 15px;
+  border-right: 1px solid #b6abab;
+  line-height: 16px;
+}
+/* line 79, scss/layout.scss */
+ul.child li:first-child {
+  padding-left: 0px;
+}
+/* line 80, scss/layout.scss */
+ul.child li.last-child {
+  padding-right: 0px;
+  border: none;
+}
+
+/* line 85, scss/layout.scss */
+.footer a {
+  text-decoration: none;
+}
+
+/* line 87, scss/layout.scss */
+.secondary ul li a {
+  font-size: 14px;
+}
+
+/* line 88, scss/layout.scss */
+.secondary ul li li a, .secondary ul li.section li a, .secondary ul li.current li a {
+  color: inherit;
+}
+
+/* line 91, scss/layout.scss */
+.social a {
+  height: 24px;
+  width: 24px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+/* line 92, scss/layout.scss */
+.social a span {
+  display: none;
+}
+/* line 93, scss/layout.scss */
+.social a:hover {
+  opacity: .75;
+}
+/* line 94, scss/layout.scss */
+.social a.fb {
+  background: url("/themes/dynamic-core-theme/images/facebook.png") no-repeat left top;
+}
+/* line 95, scss/layout.scss */
+.social a.tw {
+  background: url("/themes/dynamic-core-theme/images/twitter.png") no-repeat left top;
+}
+/* line 96, scss/layout.scss */
+.social a.go {
+  background: url("/themes/dynamic-core-theme/images/google-plus.png") no-repeat left top;
+}
+/* line 97, scss/layout.scss */
+.social a.li {
+  background: url("/themes/dynamic-core-theme/images/linkedin.png") no-repeat left top;
+}
+
+/* line 101, scss/layout.scss */
+nav.footerNav {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/* line 103, scss/layout.scss */
+li.current ul.child a, li.current ul.child a:visited, li.section ul.child a, li.section ul.child a:visited {
+  color: #58a349;
+}
+
+/* line 104, scss/layout.scss */
+li.current ul.child a:hover, li.current ul.child a:focus, li.section ul.child a:hover, li.section ul.child a:focus {
+  color: #b0da9b;
+}
+
+/* line 105, scss/layout.scss */
+ul.child li a {
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* #Page Styles
+================================================== */
+/* line 111, scss/layout.scss */
+.crumbs {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/*** Misc Alignment ***/
+/* line 114, scss/layout.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 115, scss/layout.scss */
+.float-right {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+/* line 116, scss/layout.scss */
+.float-left {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* line 118, scss/layout.scss */
+p.sharethis {
+  margin: 15px 0 30px;
+}
+
+/* line 123, scss/layout.scss */
+a.ShareIcon {
+  width: 17px;
+  height: 17px;
+  background: url("/themes/dynamic-core-theme/images/ShareIcons.png") no-repeat top left;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 124, scss/layout.scss */
+a.fb-share.ShareIcon {
+  background-position: 0px 0px;
+}
+
+/* line 125, scss/layout.scss */
+a.tw-share.ShareIcon {
+  background-position: -18px 0px;
+}
+
+/* line 126, scss/layout.scss */
+a.go-share.ShareIcon {
+  background-position: -36px 0px;
+}
+
+/* line 127, scss/layout.scss */
+a.li-share.ShareIcon {
+  background-position: -55px 0px;
+}
+
+/* line 128, scss/layout.scss */
+a.pi-share.ShareIcon {
+  background-position: -74px 0px;
+}
+
+/* line 129, scss/layout.scss */
+a.em-share.ShareIcon {
+  background-position: -92px 0px;
+}
+
+/* Styles for the KitchenSink Page */
+/* line 134, scss/layout.scss */
+.KitchenBorder {
+  border-bottom: 3px dotted #58a349;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 135, scss/layout.scss */
+.KS {
+  background: #e1e1e1;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: black;
+  margin-bottom: 5px;
+}
+/* line 136, scss/layout.scss */
+.KS p {
+  padding: 6px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 149, scss/layout.scss */
+  .crumbs, #access {
+    display: none !important;
+  }
+
+  /* line 150, scss/layout.scss */
+  .mobile-navigation {
+    float: right;
+    margin-top: 30px;
+  }
+
+  /* line 151, scss/layout.scss */
+  .mobile-menu {
+    display: block;
+    width: 125px;
+    margin-top: 40px;
+  }
+
+  /* line 153, scss/layout.scss */
+  #mobilenavs {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 550;
+    display: block !important;
+  }
+  /* line 154, scss/layout.scss */
+  #mobilenavs li {
+    position: relative;
+    text-align: center;
+  }
+  /* line 155, scss/layout.scss */
+  #mobilenavs li ul {
+    margin-left: auto;
+    margin-right: auto;
+    left: auto;
+    right: -10px;
+    width: 768px;
+    display: none;
+    top: 62px;
+    z-index: 600 !important;
+  }
+  /* line 156, scss/layout.scss */
+  #mobilenavs li ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 900;
+  }
+  /* line 157, scss/layout.scss */
+  #mobilenavs li ul li.mobile-util a {
+    text-decoration: none;
+    color: #1e1c2d;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  /* line 160, scss/layout.scss */
+  #mobilenavs li:hover ul li a:hover {
+    text-decoration: none !important;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+  }
+  /* line 161, scss/layout.scss */
+  #mobilenavs a {
+    display: block;
+  }
+  /* line 162, scss/layout.scss */
+  #mobilenavs ul {
+    position: absolute;
+    left: -9999px;
+    margin: 7px 0px 0px;
+    background: url("/themes/dynamic-core-theme/images/mobile-menu-bg.png") repeat;
+  }
+  /* line 163, scss/layout.scss */
+  #mobilenavs ul a {
+    white-space: nowrap;
+    padding: 7px 5px;
+    height: auto;
+  }
+  /* line 164, scss/layout.scss */
+  #mobilenavs ul li {
+    padding: 3px 0px 8px;
+    width: 90%;
+    margin: 0px auto;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #5ee146;
+    text-align: center;
+  }
+  /* line 165, scss/layout.scss */
+  #mobilenavs ul li:last-child {
+    border: none;
+  }
+
+  /* line 168, scss/layout.scss */
+  nav.mobile-subnav {
+    display: block !important;
+  }
+
+  /* line 169, scss/layout.scss */
+  nav.mobile-subnav li {
+    width: 767px !important;
+  }
+
+  /* line 170, scss/layout.scss */
+  nav.utility {
+    display: none;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 178, scss/layout.scss */
+  .crumbs, #access {
+    display: none !important;
+  }
+
+  /* line 179, scss/layout.scss */
+  .mobile-navigation {
+    float: right;
+    margin-top: 30px;
+  }
+
+  /* line 181, scss/layout.scss */
+  #mobilenavs {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 550;
+    display: block !important;
+  }
+  /* line 182, scss/layout.scss */
+  #mobilenavs li {
+    position: relative;
+    text-align: center;
+  }
+  /* line 183, scss/layout.scss */
+  #mobilenavs li ul {
+    margin-left: auto;
+    margin-right: auto;
+    left: auto;
+    right: 0px;
+    width: 300px;
+    display: none;
+    top: 63px;
+    z-index: 600 !important;
+  }
+  /* line 184, scss/layout.scss */
+  #mobilenavs li ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 900;
+  }
+  /* line 185, scss/layout.scss */
+  #mobilenavs li ul li.mobile-util a {
+    text-decoration: none;
+    color: #1e1c2d;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  /* line 186, scss/layout.scss */
+  #mobilenavs li ul li a:hover {
+    text-decoration: none !important;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+  }
+  /* line 189, scss/layout.scss */
+  #mobilenavs a {
+    display: block;
+  }
+  /* line 190, scss/layout.scss */
+  #mobilenavs ul {
+    position: absolute;
+    left: -9999px;
+    margin: 7px 0px 0px;
+    background: url("/themes/dynamic-core-theme/images/mobile-menu-bg.png") repeat;
+  }
+  /* line 191, scss/layout.scss */
+  #mobilenavs ul a {
+    white-space: nowrap;
+    padding: 7px 5px;
+    height: auto;
+  }
+  /* line 192, scss/layout.scss */
+  #mobilenavs ul li {
+    padding: 3px 0px 8px;
+    width: 90%;
+    margin: 0px auto;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #5ee146;
+    text-align: center;
+  }
+  /* line 193, scss/layout.scss */
+  #mobilenavs ul li:last-child {
+    border: none;
+  }
+
+  /* line 198, scss/layout.scss */
+  .footer .columns {
+    margin-bottom: 10px !important;
+  }
+
+  /* line 200, scss/layout.scss */
+  .mobile-top {
+    margin-top: 20px !important;
+  }
+
+  /* line 201, scss/layout.scss */
+  nav.utility {
+    display: none;
+  }
+
+  /* line 203, scss/layout.scss */
+  .content {
+    margin-top: 20px !important;
+  }
+
+  /* line 204, scss/layout.scss */
+  .sidebar {
+    margin-top: 20px !important;
+    padding-top: 20px;
+    border-top: 3px dotted #58a349;
+  }
+
+  /* line 206, scss/layout.scss */
+  .footer .social ul {
+    text-align: center;
+    display: block;
+  }
+  /* line 207, scss/layout.scss */
+  .footer .social li {
+    display: inline-block;
+  }
+
+  /* line 209, scss/layout.scss */
+  .field, .control-group {
+    min-width: 98% !important;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 217, scss/layout.scss */
+  #mobilenavs {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 601;
+    display: block !important;
+  }
+  /* line 218, scss/layout.scss */
+  #mobilenavs li ul {
+    width: 420px;
+    right: 0px;
+    left: auto;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

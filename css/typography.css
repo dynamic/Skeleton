@@ -1,0 +1,336 @@
+/* Variables
+================================================== */
+/* #Typography
+================================================== */
+/* line 12, scss/typography.scss */
+body {
+  background: white;
+  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #a2a2a2;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 20, scss/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #a8a8a8;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 25, scss/typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* line 28, scss/typography.scss */
+h1 {
+  font-size: 46px;
+  line-height: 50px;
+  margin-bottom: 14px;
+}
+
+/* line 29, scss/typography.scss */
+h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+/* line 30, scss/typography.scss */
+h3 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+
+/* line 31, scss/typography.scss */
+h4 {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+
+/* line 32, scss/typography.scss */
+h5 {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* line 33, scss/typography.scss */
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 35, scss/typography.scss */
+p {
+  margin: 0 0 20px 0;
+}
+/* line 36, scss/typography.scss */
+p img {
+  margin: 0;
+}
+/* line 37, scss/typography.scss */
+p.lead {
+  font-size: 21px;
+  line-height: 27px;
+  color: #777;
+}
+/* line 38, scss/typography.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* line 41, scss/typography.scss */
+.footer, span.tags {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/* line 43, scss/typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 44, scss/typography.scss */
+strong, .strong {
+  font-weight: bold;
+}
+
+/* line 45, scss/typography.scss */
+small {
+  font-size: 80%;
+}
+
+/*	Blockquotes  */
+/* line 48, scss/typography.scss */
+blockquote, blockquote p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #777;
+  font-style: italic;
+}
+
+/* line 49, scss/typography.scss */
+blockquote {
+  margin: 0 0 20px;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #ddd;
+}
+/* line 50, scss/typography.scss */
+blockquote cite {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+/* line 51, scss/typography.scss */
+blockquote cite a, blockquote cite a:visited {
+  color: #555;
+}
+/* line 53, scss/typography.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+/* line 56, scss/typography.scss */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 10px;
+  height: 0;
+}
+
+/* #Links
+================================================== */
+/* line 62, scss/typography.scss */
+a, a:visited {
+  color: #58a349;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 63, scss/typography.scss */
+a:hover, a:focus {
+  color: #b0da9b;
+}
+
+/* #Lists
+================================================== */
+/* line 68, scss/typography.scss */
+ul, ol {
+  margin-bottom: 20px;
+}
+
+/* line 69, scss/typography.scss */
+ul {
+  list-style: none outside;
+}
+
+/* line 70, scss/typography.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 71, scss/typography.scss */
+ol, ul.square, ul.circle, ul.disc {
+  margin-left: 30px;
+}
+
+/* line 72, scss/typography.scss */
+ul.square {
+  list-style: square outside;
+}
+
+/* line 73, scss/typography.scss */
+ul.circle {
+  list-style: circle outside;
+}
+
+/* line 74, scss/typography.scss */
+ul.disc {
+  list-style: disc outside;
+}
+
+/* line 76, scss/typography.scss */
+ul ul, ul ol,
+ol ol, ol ul {
+  margin: 4px 0 5px 30px;
+  font-size: 90%;
+}
+
+/* line 78, scss/typography.scss */
+ul ul li, ul ol li,
+ol ol li, ol ul li {
+  margin-bottom: 6px;
+}
+
+/* line 79, scss/typography.scss */
+li {
+  line-height: 18px;
+}
+
+/* line 80, scss/typography.scss */
+ul.large li {
+  line-height: 21px;
+}
+
+/* line 81, scss/typography.scss */
+li p {
+  line-height: 21px;
+}
+
+/* line 82, scss/typography.scss */
+.typography ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* line 83, scss/typography.scss */
+.typography ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* LINK ICONS - shows type of file
+================================================== */
+/* line 90, scss/typography.scss */
+.typography a[href$=".pdf"],
+.typography a[href$=".PDF"],
+.typography a.pdf {
+  padding: 2px;
+  padding-left: 20px;
+  background: url(/dynamic-core/images/icons/page_white_acrobat.png) no-repeat left center;
+}
+
+/* line 97, scss/typography.scss */
+.typography a[href$=".doc"],
+.typography a[href$=".DOC"],
+.typography a.doc {
+  padding: 2px;
+  padding-left: 20px;
+  background: url(/dynamic-core/images/icons/page_word.png) no-repeat left center;
+}
+
+/* line 104, scss/typography.scss */
+.typography a[href$=".xls"],
+.typography a[href$=".XLS"],
+.typography a.xls {
+  padding: 2px;
+  padding-left: 20px;
+  background: url(/dynamic-core/images/icons/page_excel.png) no-repeat left center;
+}
+
+/* line 115, scss/typography.scss */
+.typography a[href$=".gz"],
+.typography a[href$=".GZ"],
+.typography a[href$=".gzip"],
+.typography a[href$=".GZIP"],
+.typography a[href$=".zip"],
+.typography a[href$=".ZIP"],
+.typography a.archive {
+  padding: 2px;
+  padding-left: 20px;
+  background: url(/dynamic-core/images/icons/page_white_zip.png) no-repeat left center;
+}
+
+/* line 122, scss/typography.scss */
+.typography a[href$=".exe"],
+.typography a[href$=".EXE"],
+.typography a.application {
+  padding: 2px;
+  padding-left: 20px;
+  background: url(/dynamic-core/images/icons/application.png) no-repeat left center;
+}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+-------------------------------------------- */
+/* line 131, scss/typography.scss */
+.typography .left {
+  text-align: left;
+}
+
+/* line 134, scss/typography.scss */
+.typography .center {
+  text-align: center;
+}
+
+/* line 137, scss/typography.scss */
+.typography .right {
+  text-align: right;
+}
+
+/* IMAGES 
+-------------------------------------------- */
+/* line 144, scss/typography.scss */
+.typography img.left {
+  float: left;
+  max-width: 50%;
+  margin: 5px 20px 10px 0;
+}
+
+/* line 149, scss/typography.scss */
+.typography img.right {
+  float: right;
+  max-width: 50%;
+  /* Responsive width */
+  margin: 5px 0 10px 20px;
+}
+
+/* line 154, scss/typography.scss */
+.typography img.leftAlone {
+  float: left;
+  margin-right: 100%;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+/* line 160, scss/typography.scss */
+.typography img.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10px;
+  clear: both;
+}
